@@ -22,7 +22,7 @@ st.set_page_config(
 # =========================================================
 # HEADER
 # =========================================================
-col1, col2 = st.columns([8, 2])
+col1, col2 = st.columns([6, 4])
 with col1:
     st.title("iRATco Annotation-Guided Cell Counting")
     st.markdown(
