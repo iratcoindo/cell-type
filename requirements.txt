@@ -3,4 +3,7 @@ opencv-python-headless
 numpy
 pandas
 matplotlib
-seaborn
+Pillow
+scikit-image
+scikit-learn
+streamlit-image-coordinates
