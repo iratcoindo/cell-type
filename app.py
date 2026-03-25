@@ -675,8 +675,8 @@ If you use this software, please cite:<br>
 <b>Subangkit</b>, MAWAR (2026)<br>
 <i>iRATco Cell Counter: Automatic Annotated Cell Counter</i><br>
 
-<a href="https://iratco-cell.streamlit.app/" target="_blank" style="color:#6b7280;">
-https://iratco-cell.streamlit.app/
+<a href="available at: https://iratco-cell.streamlit.app/" target="_blank" style="color:#6b7280;">
+available at: https://iratco-cell.streamlit.app/
 </a>
 </div>
 """, unsafe_allow_html=True)
