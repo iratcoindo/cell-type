@@ -655,20 +655,15 @@ if uploaded is not None:
                 mime="text/csv"
             )
 
-# =========================================================
-# FOOTER
-# =========================================================
 st.markdown("---")
-st.caption("""
-Prototype version. Best used as a semi-automatic starting point; segmentation and feature engineering can be refined for your stain and tissue type.
 
-© 2026 Mawar Subangkit
-
-Semi-automatic Cell Counting from Histopathology Images
+st.markdown("""
+© 2026 Mawar Subangkit  
+**Automatic Annotated Cell Counter**  
 
 If you use this software, please cite:
 
-Subangkit, MAWAR (2026)
-Semi-automatic Cell Counting from Histopathology Images
-Available at: https://iratco-histo.streamlit.app/
+**Subangkit**, MAWAR (2026)  
+**iRATco Cell Counter: Automatic Annotated Cell Counter**  
+Available at: https://iratco-cell.streamlit.app/
 """)
