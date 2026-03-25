@@ -658,12 +658,25 @@ if uploaded is not None:
 st.markdown("---")
 
 st.markdown("""
-© 2026 Mawar Subangkit  
-**Automatic Annotated Cell Counter Software**  
+<div style="
+    text-align:left;
+    color:#6b7280;
+    font-size:13px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:1px solid #e5e7eb;
+    margin-top:20px;
+">
+© 2026 Mawar Subangkit<br>
+<b>Automatic Annotated Cell Counter Software</b><br><br>
 
-If you use this software, please cite:
+If you use this software, please cite:<br>
 
-**Subangkit**, MAWAR (2026)  
-**iRATco Cell Counter: Automatic Annotated Cell Counter**  
-Available at: https://iratco-cell.streamlit.app/
-""")
+<b>Subangkit</b>, MAWAR (2026)<br>
+<i>iRATco Cell Counter: Automatic Annotated Cell Counter</i><br>
+
+<a href="https://iratco-cell.streamlit.app/" target="_blank" style="color:#6b7280;">
+https://iratco-cell.streamlit.app/
+</a>
+</div>
+""", unsafe_allow_html=True)
