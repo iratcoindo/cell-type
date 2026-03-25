@@ -659,7 +659,7 @@ st.markdown("---")
 
 st.markdown("""
 © 2026 Mawar Subangkit  
-**Automatic Annotated Cell Counter**  
+**Automatic Annotated Cell Counter Software**  
 
 If you use this software, please cite:
 
