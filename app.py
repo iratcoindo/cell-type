@@ -673,7 +673,7 @@ st.markdown("""
 If you use this software, please cite:<br>
 
 <b>Subangkit</b>, MAWAR (2026)<br>
-<i>iRATco Cell Counter: Automatic Annotated Cell Counter</i><br>
+<i>iRATco Cell Counter: Automatic Annotated Cell Counter Software</i><br>
 
 <a href="available at: https://iratco-cell.streamlit.app/" target="_blank" style="color:#6b7280;">
 available at: https://iratco-cell.streamlit.app/
