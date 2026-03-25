@@ -10,6 +10,15 @@ from PIL import Image
 from skimage import measure, morphology, segmentation, feature
 from sklearn.ensemble import RandomForestClassifier
 
+# =========================================================
+# PAGE CONFIG
+# =========================================================
+st.set_page_config(
+    page_title="iRATco Annotation-Guided Cell Counting",
+    page_icon="logo.png",
+    layout="wide"
+)
+
 # =========================
 # DATA USER (hardcoded)
 # =========================
@@ -28,11 +37,63 @@ if "authenticated" not in st.session_state:
 # LOGIN
 # =========================
 if not st.session_state.authenticated:
-    col1, col2 = st.columns([6,2])
+
+    # 🔥 STYLE TAMBAHAN (INI SAJA YANG BARU)
+    st.markdown("""
+    <style>
+    .stTextInput input {
+        height: 45px;
+        border-radius: 10px;
+        border: 1px solid #e5e7eb;
+        font-size: 15px;
+    }
+
+    .stButton button {
+        height: 45px;
+        width: 140px;
+        border-radius: 10px;
+        background-color: #2563eb;
+        color: white;
+        font-weight: 600;
+        border: none;
+    }
+
+    .stButton button:hover {
+        background-color: #1e40af;
+    }
+
+    /* subtle scientific background */
+    body {
+        background-color: #f9fafb;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    col1, col2 = st.columns([7,2])  # sedikit diperlebar
+
     with col1:
-        st.title("🔐 Login to ")
+        st.markdown("""
+        <h1 style="
+            color:#4b5563;
+            font-weight:600;
+            white-space:nowrap;
+            letter-spacing:0.3px;
+        ">
+        🔬 Login to iRATco Software
+        </h1>
+
+        <div style="
+            color:#9ca3af;
+            font-size:16px;
+            margin-top:-10px;
+            margin-bottom:20px;
+        ">
+        Advanced Laboratory Analysis Platform
+        </div>
+        """, unsafe_allow_html=True)
+
     with col2:
-        st.image("logo_iratco.png", width=250)
+        st.image("logo_iratco.png", width=230)
 
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
@@ -46,19 +107,11 @@ if not st.session_state.authenticated:
             st.error("Invalid username or password")
 
     st.stop()
-# =========================================================
-# PAGE CONFIG
-# =========================================================
-st.set_page_config(
-    page_title="iRATco Annotation-Guided Cell Counting",
-    page_icon="logo.png",
-    layout="wide"
-)
 
 # =========================================================
 # HEADER
 # =========================================================
-col1, col2 = st.columns([6, 2])
+col1, col2 = st.columns([7, 2])
 with col1:
     st.title("iRATco Annotation-Guided Cell Counting")
     st.markdown(
