@@ -10,6 +10,42 @@ from PIL import Image
 from skimage import measure, morphology, segmentation, feature
 from sklearn.ensemble import RandomForestClassifier
 
+# =========================
+# DATA USER (hardcoded)
+# =========================
+USERS = {
+    "admin": "iratcolab1",
+    "lab": "iratcolab5"
+}
+
+# =========================
+# SESSION INIT
+# =========================
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+# =========================
+# LOGIN
+# =========================
+if not st.session_state.authenticated:
+    col1, col2 = st.columns([6,2])
+    with col1:
+        st.title("🔐 Login to ")
+    with col2:
+        st.image("logo_iratco.png", width=250)
+
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+
+    if st.button("Login"):
+        if username in USERS and USERS[username] == password:
+            st.session_state.authenticated = True
+            st.session_state.username = username
+            st.success(f"Welcome, {username} 👋")
+        else:
+            st.error("Invalid username or password")
+
+    st.stop()
 # =========================================================
 # PAGE CONFIG
 # =========================================================
