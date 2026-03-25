@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 # =========================================================
 st.set_page_config(
     page_title="iRATco Cell Counter",
-    page_icon="iRATco Logo.png",
+    page_icon="logo.png",
     layout="wide"
 )
 
