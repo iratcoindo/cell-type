@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 # PAGE CONFIG
 # =========================================================
 st.set_page_config(
-    page_title="iRATco-Inflam Counter",
+    page_title="iRATco Cell Counter",
     page_icon="iRATco Logo.png",
     layout="wide"
 )
@@ -24,7 +24,7 @@ st.set_page_config(
 # =========================================================
 col1, col2 = st.columns([8, 2])
 with col1:
-    st.title("iRATco-Inflam Counter")
+    st.title("iRATco Cell Counter")
     st.markdown(
         "<span style='font-size:16px;color:gray;'>**version 1.1.0**</span>",
         unsafe_allow_html=True
@@ -664,11 +664,11 @@ Prototype version. Best used as a semi-automatic starting point; segmentation an
 
 © 2026 Mawar Subangkit
 
-Semi-automatic Inflammatory Cell Counting from Histopathology Images
+Semi-automatic Cell Counting from Histopathology Images
 
 If you use this software, please cite:
 
 Subangkit, MAWAR (2026)
-Semi-automatic Inflammatory Cell Counting from Histopathology Images
+Semi-automatic Cell Counting from Histopathology Images
 Available at: https://iratco-histo.streamlit.app/
 """)
