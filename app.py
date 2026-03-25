@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 # PAGE CONFIG
 # =========================================================
 st.set_page_config(
-    page_title="iRATco Annotation-Guided Cell Counting Software",
+    page_title="iRATco Annotation-Guided Cell Counting",
     page_icon="logo.png",
     layout="wide"
 )
@@ -24,7 +24,7 @@ st.set_page_config(
 # =========================================================
 col1, col2 = st.columns([8, 2])
 with col1:
-    st.title("iRATco Cell Counter")
+    st.title("iRATco Annotation-Guided Cell Counting")
     st.markdown(
         "<span style='font-size:16px;color:gray;'>**version 1.1.0**</span>",
         unsafe_allow_html=True
