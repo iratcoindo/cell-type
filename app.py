@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 # PAGE CONFIG
 # =========================================================
 st.set_page_config(
-    page_title="iRATco Cell Counter",
+    page_title="iRATco Annotation-Guided Cell Counting Software",
     page_icon="logo.png",
     layout="wide"
 )
@@ -668,12 +668,12 @@ st.markdown("""
     margin-top:20px;
 ">
 © 2026 Mawar Subangkit<br>
-<b>Automatic Annotated Cell Counter Software</b><br><br>
+<b>Annotation-Guided Cell Counting Software</b><br><br>
 
 If you use this software, please cite:<br>
 
 <b>Subangkit</b>, MAWAR (2026)<br>
-<i>iRATco Cell Counter: Automatic Annotated Cell Counter Software</i><br>
+<i>iRATco Annotation-Guided Cell Counting Software</i><br>
 
 <a href="available at: https://iratco-cell.streamlit.app/" target="_blank" style="color:#6b7280;">
 available at: https://iratco-cell.streamlit.app/
