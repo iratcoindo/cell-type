@@ -104,7 +104,7 @@ if not st.session_state.authenticated:
             st.session_state.username = username
             st.success(f"Welcome, {username} 👋")
         else:
-            st.error("Invalid username or password")
+            st.error("Invalid username or password. Contact us at: office-indo@iratco.co.id")
 
     st.stop()
 
